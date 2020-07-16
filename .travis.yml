@@ -1,2 +1,7 @@
 language: node_js
-script: true
+node_js:
+  - "8"
+before_script:
+  - npm install -g eslint
+script: 
+  - npm run lint
