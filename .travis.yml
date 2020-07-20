@@ -3,5 +3,8 @@ node_js:
   - "8"
 before_script:
   - npm install -g eslint
-script: 
-  - npm run lint
+  #- npm install -g karma
+script: true
+  #- npm run build
+  - npm run test
+  #- npm run lint
