@@ -14,5 +14,4 @@ script: true
   #- npm run lint
 after_success:
   - ls
-  - find / -name lcov.info
   - java -jar codacy-coverage-reporter-assembly.jar report -l Javascript -r ./lcov.info
